@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
     default: "Strender",
-    template: "%s | Strender"
+    template: "%s | Strender",
   },
-  description: "Football blog app"
+  description: "Football blog app",
 };
 
 export default function RootLayout({
@@ -19,10 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        
-      </head>
-      <body className={inter.className}>{children}</body>
+      <head></head>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
