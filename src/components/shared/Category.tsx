@@ -13,10 +13,8 @@ export default function Category(){
     useEffect(() => {
         const fetchCategories = async () => {
           try {
-            const response = await axios.get("/api/category/");
-            console.log(response.data.data);
+            const response = await axios.get("/api/categories/");
             setCategories(response.data.data);
-            // setCategories(response.data);
             setLoading(false);
           } catch (error) {
             console.error("Error fetching categories:", error);
