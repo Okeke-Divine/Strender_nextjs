@@ -5,7 +5,7 @@ export default function SocialIconComp1({
   url,
 }: {
   iconClass: string;
-  url: String;
+  url: string;
 }) {
   return (
     <>
