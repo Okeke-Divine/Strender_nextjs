@@ -49,21 +49,25 @@ export const POST = async (req: Request, res: Response) => {
     });
 
     if (category) {
-        return NextResponse.json(
-          { message: "Success fully created", data: post },
-          { status: 201 }
-        );
-      } else {
-        return NextResponse.json(
-          { message: "An error occured" },
-          { status: 500 }
-        );
-      }
+      return NextResponse.json(
+        { message: "Success fully created", data: post },
+        { status: 201 }
+      );
+    } else {
+      return NextResponse.json(
+        { message: "An error occured" },
+        { status: 500 }
+      );
+    }
   } catch (e) {
     return NextResponse.json({ message: "Error: " + e }, { status: 500 });
   }
 };
 
 export const GET = async (req: Request, res: Response) => {
-  return NextResponse.json({ message: "Okay" }, { status: 200 });
+  const posts = await prisma.post.findMany();
+  return NextResponse.json(
+    { message: "Success", data: posts },
+    { status: 200 }
+  );
 };
