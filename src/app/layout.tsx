@@ -69,9 +69,9 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + " bg-cs-dark min-h-[100vh]"}>
         <Navbar />
-        <div className="bg-cs-dark min-h-[100vh]">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>
