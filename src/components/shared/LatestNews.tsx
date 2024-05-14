@@ -3,12 +3,26 @@ import { useState, useEffect } from "react";
 import ComponentTitle from "./ComponentTitle";
 import config from "@/data/config.json";
 import LatestNewsPost from "./LatestNewsPost";
+import axios from "axios";
 
 export default function LatestNews() {
   const lastestNewsDesc = config.lastes_news_description;
 
   const [lastestNews, setLatestNews] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  useEffect(function () {
+    const fetchNews = async () => {
+      try {
+        const response = await axios.get("/api/posts/latest");
+        setLatestNews(response.data.data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+    fetchNews();
+  }, []);
 
   return (
     <>
@@ -26,7 +40,7 @@ export default function LatestNews() {
             ) : (
               ""
             )}
-            {lastestNews.map((news:any, index:number) => (
+            {lastestNews.map((news: any, index: number) => (
               <LatestNewsPost
                 title={news.title}
                 previewText={news.summary}
