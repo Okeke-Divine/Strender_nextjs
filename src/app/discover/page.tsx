@@ -1,5 +1,4 @@
 "use client";
-import LatestNews from "@/components/shared/LatestNews";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
 import axios from "axios";
 import { useState } from "react";
@@ -83,7 +82,6 @@ export default function DiscoverPage() {
             )}
           </div>
         )}
-        <LatestNews/>
       </main>
     </>
   );
