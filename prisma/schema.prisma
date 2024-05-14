@@ -24,7 +24,7 @@ model Post {
   author      String?   @db.VarChar(50) @default("Admin")
   summary     String    @db.Text
   content     String    @db.Text
-  slug        String    @db.VarChar(50)
+  slug        String    @unique @db.VarChar(50)
   tags        String    @db.VarChar(250)
   createdAt   DateTime  @default(now())
   total_views Int?      @default(1)
