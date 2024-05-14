@@ -71,7 +71,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <div className="bg-cs-dark min-h-[100vh]">{children}</div>
         <Footer />
       </body>
     </html>
