@@ -1,5 +1,5 @@
 import Link from "next/link";
-import formatDate from "../utils/formatDate";
+import formatDate from "@/utils/shared/formatDate"
 
 interface PropsType {
   url: string;
