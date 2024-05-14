@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import LatestNews from "@/components/shared/LatestNews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -72,6 +73,7 @@ export default function RootLayout({
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
         <div className="min-h-[50vh]">{children}</div>
+        <div className="mainComponent"><LatestNews /></div>
         <Footer />
       </body>
     </html>
