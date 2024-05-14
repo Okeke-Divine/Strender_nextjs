@@ -11,7 +11,8 @@ export const metadata: Metadata = {
     default: "Strender",
     template: "%s | Strender",
   },
-  description: "Football blog app",
+  description:
+    "Your one stop platform for all kinds of news, posts and updates on all things related to sport",
 };
 
 export default function RootLayout({
@@ -21,7 +22,53 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Your one stop platform for all kinds of news, posts and updates on all things related to sport"
+        />
+        {/* <link rel="icon" type="image/svg+xml" href="/vite.svg" /> */}
+        <link
+          rel="shortcut icon"
+          href="/assets/images/application-logo.png"
+          type="image/x-icon"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
+          crossOrigin="anonymous"
+        ></script>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
