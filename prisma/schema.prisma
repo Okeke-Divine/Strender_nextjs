@@ -21,7 +21,7 @@ model Post {
   categoryId  String
   title       String    @db.VarChar(250)
   img_url     String    @db.Text
-  author      String    @db.VarChar(50)
+  author      String?   @db.VarChar(50) @default("Admin")
   summary     String    @db.Text
   content     String    @db.Text
   slug        String    @db.VarChar(50)
