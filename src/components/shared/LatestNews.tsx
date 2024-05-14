@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import ComponentTitle from "./ComponentTitle";
 import config from "@/data/config.json";
+import LatestNewsPost from "./LatestNewsPost";
 
 export default function LatestNews() {
   const lastestNewsDesc = config.lastes_news_description;
@@ -25,7 +26,7 @@ export default function LatestNews() {
             ) : (
               ""
             )}
-            {lastestNews.map((news, index) => (
+            {lastestNews.map((news:any, index:number) => (
               <LatestNewsPost
                 title={news.title}
                 previewText={news.summary}
