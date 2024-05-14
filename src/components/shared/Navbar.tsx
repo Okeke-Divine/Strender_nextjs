@@ -11,7 +11,7 @@ interface NavbarLinkItem {
 }
 
 const links: NavbarLinkItem[] = [
-  { url: "/home", name: "Home", smallScreenOnly: false },
+  { url: "/", name: "Home", smallScreenOnly: false },
   { url: "/category", name: "Category", smallScreenOnly: false },
   { url: "/discover", name: "Discover", smallScreenOnly: false },
   // { url: "/news", name: "News" },
