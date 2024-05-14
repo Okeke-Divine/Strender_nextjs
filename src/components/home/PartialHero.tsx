@@ -1,7 +1,7 @@
 import config from "@/data/config.json"
 import SocialIconComp1 from "@/components/shared/SocialIconComp1";
 
-function PartialHero() {
+export default function PartialHero() {
     const siteDesc = config.description
     return (
       <>
