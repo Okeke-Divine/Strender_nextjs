@@ -9,7 +9,7 @@ datasource db {
 
 model Category {
   id          String @id @default(uuid())
-  name        String @db.VarChar(250)
+  name        String @unique @db.VarChar(250)
   img_url     String @db.Text
   total_posts Int?   @default(0)
   Post        Post[]
