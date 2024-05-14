@@ -6,12 +6,12 @@ export const GET = async (req: Request, res: Response) => {
     const { searchParams } = new URL(req.url);
     const query = searchParams.get("query");
 
-    if (!query) {
-        return NextResponse.json(
-          { message: "Query parameter is missing" },
-          { status: 400 }
-        );
-      }
+    if (!query || query == "") {
+      return NextResponse.json(
+        { message: "Query parameter is missing" },
+        { status: 400 }
+      );
+    }
 
     const posts = await prisma.post.findMany({
       where: {
