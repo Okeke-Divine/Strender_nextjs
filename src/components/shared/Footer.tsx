@@ -8,12 +8,8 @@ interface FooterLinkType{
 
 const links1: FooterLinkType[] = [
   {
-    name: "404 page",
-    url: "/404-page",
-  },
-  {
     name: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     name: "Category",
@@ -23,10 +19,6 @@ const links1: FooterLinkType[] = [
     name: "Discover",
     url: "/discover",
   },
-  // {
-  //   name: "News",
-  //   url: "/news",
-  // },
   {
     name: "About",
     url: "/about",
