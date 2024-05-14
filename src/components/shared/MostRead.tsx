@@ -11,7 +11,7 @@ export default function MostRead() {
   useEffect(function () {
     const fetchPost = async () => {
       try {
-        const response = await axios.get("/api/posts");
+        const response = await axios.get("/api/posts/most-read");
         setMostReadPosts(response.data.data);
         setLoading(false);
       } catch (error) {
