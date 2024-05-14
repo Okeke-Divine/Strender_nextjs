@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import ComponentTitle from "./ComponentTitle";
 import axios from "axios";
+import MostReadPostElem from "./MostReadPostElem";
 
 export default function MostRead() {
   const [mostReadPosts, setMostReadPosts] = useState([]);
@@ -10,8 +11,8 @@ export default function MostRead() {
   useEffect(function () {
     const fetchPost = async () => {
       try {
-        const response = await axios.get("posts-preview/type-2/");
-        setMostReadPosts(response.data);
+        const response = await axios.get("/api/posts");
+        setMostReadPosts(response.data.data);
         setLoading(false);
       } catch (error) {
         console.log("Error fetching posts:", error);
@@ -36,7 +37,7 @@ export default function MostRead() {
             ) : (
               ""
             )}
-            {mostReadPosts.map((post, index) => (
+            {mostReadPosts.map((post:any, index) => (
               <MostReadPostElem
                 url={"/post/" + post.slug}
                 title={post.title}
