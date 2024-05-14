@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://strender.vercel.app/home</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <url>
+    <loc>https://strender.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <url>
+    <loc>https://strender.vercel.app/category</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <url>
+    <loc>https://strender.vercel.app/discover</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+</urlset>

@@ -3,31 +3,77 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --s-yellow-1: #eafa04;
+  --s-yellow-2: #717830;
+  --s-yellow-3: #dadc61;
+  --s-grey-1: #b9aaab;
+  --s-grey-2: #615561;
+  --s-dark: rgb(21, 25, 36);
+  --s-dark-light: rgb(35, 41, 58);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.bg-cs-dark {
+  background: var(--s-dark);
+}
+
+.bg-cs-dark-light {
+  background: var(--s-dark-light);
+}
+
+.cs-text-yellow-1 {
+  color: var(--s-yellow-1);
+}
+
+.cs-bg-yellow-1 {
+  background: var(--s-yellow-1);
+}
+
+.cs-bg-yellow-2 {
+  background: var(--s-yellow-2);
+}
+
+.cs-bg-yellow-3 {
+  background: var(--s-yellow-3);
+}
+
+.cs-text-yellow-2 {
+  color: var(--s-yellow-2);
+}
+
+.cs-text-yellow-3 {
+  color: var(--s-yellow-3);
+}
+
+@layer components {
+  .mainComponent {
+    @apply mt-5 px-5 sm:px-10 md:px-20 lg:px-36;
+  }
+  .mainComponent2 {
+    @apply px-2 sm:px-6 md:px-16 lg:px-12;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* begin custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar-track {
+  background: var(--s-dark);
+}
+
+.scroll-bar-track-2::-webkit-scrollbar-track {
+  background: var(--s-dark-light)!important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--s-yellow-1);
+  border-radius: 100px;
+  opacity: 0.6;
+}
+/* end custom scrollbar */
+
+.commentTextCont{
+  width: calc(100% - 100px);
 }

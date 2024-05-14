@@ -1,0 +1,7 @@
+User-agent: *
+Crawl-delay: 20
+
+User-agent: BingBot
+Crawl-delay: 20
+
+Sitemap: https://strender.vercel.app/sitemap.xml
