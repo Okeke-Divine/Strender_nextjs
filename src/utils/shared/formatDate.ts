@@ -1,4 +1,4 @@
-function formatDate(isoDateString: string) {
+function formatDate(isoDateString: Date) {
   const date = new Date(isoDateString);
   const options: Intl.DateTimeFormatOptions = { 
       day: 'numeric', 
