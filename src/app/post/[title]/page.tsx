@@ -93,7 +93,7 @@ export default async function Post({ params }: { params: { title: string } }) {
             </div>
             {/* post content */}
             <div
-              className="text-gray-500 mt-3"
+              className="text-gray-500 mt-3 postContentContainer"
               dangerouslySetInnerHTML={{ __html: post.content }}
               style={{ whiteSpace: "pre-wrap" }}
             />
