@@ -5,9 +5,9 @@ import prisma from "@/db";
 export const GET = async (req: Request, res: Response) => {
   const posts = await prisma.post.findMany({
     orderBy: {
-        total_views: 'asc'
+        total_views: "desc"
     },
-    take: 3
+    take: 4
   });
   return NextResponse.json(
     { message: "Success", data: posts },
