@@ -35,8 +35,8 @@ export default async function CreatePost() {
           </select>
           <br />
           <textarea placeholder="Summary" name="summary" className="input2" rows={2}></textarea><br />
-          <textarea placeholder="c  ontent" name="content" className="input2" rows={5}></textarea><br />
-          <button>Add</button>
+          <textarea placeholder="content" name="content" className="input2" rows={5}></textarea><br />
+          <button className="bg-orange-400 text-white py-2 px-3 rounded-lg">Add</button>
         </form>
       </div>
     </>
