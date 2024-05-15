@@ -6,7 +6,7 @@ const AdsComponent = (props:any) => {
 
   useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      // (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch (e) {}
   }, []);
 
