@@ -1,6 +1,4 @@
-import PostBody from "@/components/shared/PostBody";
 import formatDate from "@/utils/shared/formatDate";
-import axios from "axios";
 import __Tag from "@/components/shared/__Tag";
 import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
@@ -109,7 +107,7 @@ export default async function Post({ params }: { params: { title: string } }) {
                   </div>
                 </div>
                 {/* comments */}
-                {/* <Comment post_id={post.post_id} /> */}
+                <Comment post_id={post.id} />
               </div>
               <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
                 {/* <EmailSubscribe /> */}

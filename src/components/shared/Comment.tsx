@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Comment({ post_id }:{post_id:number}) {
+export default function Comment({ post_id }:{post_id:string}) {
   const [comments, setComments]:any = useState([]);
   const [newComment, setNewComment] = useState("");
 
