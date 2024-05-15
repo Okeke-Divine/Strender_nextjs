@@ -92,20 +92,21 @@ export default async function Post({ params }: { params: { title: string } }) {
                 </div>
                 {/* post content */}
                 <div
-                  className="text-gray-500 mt-3"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                ></div>
+    className="text-gray-500 mt-3"
+    dangerouslySetInnerHTML={{ __html: post.content }}
+    style={{ whiteSpace: 'pre-wrap' }}
+  />
                 {/* google ad */}
                 <AdsComponent dataAdSlot="4045176239" />
                 {/* post tags */}
-                <div className="mt-5">
+                {/* <div className="mt-5">
                   <div className="font-bold mb-2">Tags:</div>
                   <div className="flex gap-2 flex-wrap">
-                    {post.tags.split(", ").map((tag, index) => (
+                    {post.tags.split(",").map((tag, index) => (
                       <__Tag key={index} name={tag.trim()} />
                     ))}
                   </div>
-                </div>
+                </div> */}
                 {/* comments */}
                 <Comment post_id={post.id} post_slug={post.slug} />
               </div>
