@@ -54,9 +54,10 @@
   .input2{
     @apply border rounded-lg p-2 w-full border-white mb-2 text-black;
   }
-  .postContentContaine h3{
-    @apply text-2xl;
-  }
+}
+
+.postContentContainer h3{
+  font-size: 20px!important;
 }
 
 /* begin custom scrollbar */
