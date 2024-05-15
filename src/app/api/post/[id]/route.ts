@@ -3,10 +3,10 @@ import { NextResponse } from "next/server";
 
 export const GET = async (req: Request, res: Response) => {
   try {
-    const { pathname } = new URL(req.url);
-    console.log(pathname);
+      const { pathname } = new URL(req.url);
+      console.log(pathname);
 
-    const id = pathname.substring("/api/post/".length); 
+      const id = pathname.substring("/api/post/".length); 
 
     const post = await prisma.post.findUnique({ where: { id: id } });
     if (post) {
