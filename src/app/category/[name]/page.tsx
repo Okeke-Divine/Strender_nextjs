@@ -31,6 +31,7 @@ export default async function CatergoryByName({
     where: {
       categoryId: category.id,
     },
+    take: 10,
   });
 
   return (
