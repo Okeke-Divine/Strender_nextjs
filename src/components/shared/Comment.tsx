@@ -1,48 +1,55 @@
-"use client"
+import prisma from "@/db";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Comment({ post_id }:{post_id:string}) {
-  const [comments, setComments]:any = useState([]);
-  const [newComment, setNewComment] = useState("");
+export default async function Comment({ post_id }: { post_id: string }) {
+
+  async function createComment(data:FormData){
+    "use server"
+    const content = data.get("content")?.toString();
+    if(!content){
+      return;
+    }
+  
+    const comment = await prisma.comment.create({
+      data: {
+        postId: post_id,
+        content
+      }
+    })
+  
+    return;
+  }
+
+  const comments = await prisma.comment.findMany({
+    where: { postId: post_id },
+  });
 
   const c_img_list = [
-    '/assets/images/user-icon-1.png',
-    '/assets/images/user-icon-2.png'
+    "/assets/images/user-icon-1.png",
+    "/assets/images/user-icon-2.png",
   ];
 
-  useEffect(() => {
-    const fetchComments = async () => {
-      try {
-        const response = await axios.get(`/api/post/comments/${post_id}/`);
-        setComments(response.data);
-      } catch (error) {
-        console.error("Error fetching comments:", error);
-      }
-    };
 
-    fetchComments();
-  }, [post_id]);
-
-  const handleSubmit = async (e:any) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    try {
-      const response = await axios.post("/api/post/comments/", {
-        post_id,
-        content: newComment,
-      });
-      // Assuming the response contains the newly added comment
-      setComments([...comments, response.data.data]);
-      setNewComment("");
-    } catch (error) {
-      console.error("Error adding comment:", error);
-    }
-  };
+  // const handleSubmit = async (e: any) => {
+  //   e.preventDefault(); // Prevent default form submission behavior
+  //   try {
+  //     const response = await axios.post("/api/post/comments/", {
+  //       post_id,
+  //       content: newComment,
+  //     });
+  //     // Assuming the response contains the newly added comment
+  //     setComments([...comments, response.data.data]);
+  //     setNewComment("");
+  //   } catch (error) {
+  //     console.error("Error adding comment:", error);
+  //   }
+  // };
 
   return (
     <>
       <div className="mt-5">
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <textarea
             placeholder="What's on your mind? (Anonymous)"
             className="outline-none rounded-lg border-2 p-5 w-full"
@@ -57,32 +64,36 @@ export default function Comment({ post_id }:{post_id:string}) {
           >
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
       {/* list comments */}
       <div className="mt-2">
         <div className="font-bold mb-2">Comments:</div>
         {comments.length > 0 ? (
           <>
-          <div className="">
-            {comments.map((comment:any,index:number) => (
-              <div
-                key={index}
-                className="mb-2 flex w-full gap-x-3 items-center"
-              >
-                <div className="w-[50px]">
-                  <img
-                    src={c_img_list[Math.floor(Math.random() * c_img_list.length)]} // Assuming your comment object contains c_img field
-                    className="w-[70px] h-[70px]"
-                  />
+            <div className="">
+              {comments.map((comment: any, index: number) => (
+                <div
+                  key={index}
+                  className="mb-2 flex w-full gap-x-3 items-center"
+                >
+                  <div className="w-[50px]">
+                    <img
+                      src={
+                        c_img_list[
+                          Math.floor(Math.random() * c_img_list.length)
+                        ]
+                      } // Assuming your comment object contains c_img field
+                      className="w-[70px] h-[70px]"
+                    />
+                  </div>
+                  <div className="commentTextCont break-words">
+                    <div className="font-bold">Anonymous</div>
+                    <div>{comment.content}</div>
+                  </div>
                 </div>
-                <div className="commentTextCont break-words">
-                  <div className="font-bold">Anonymous</div>
-                  <div>{comment.content}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
           </>
         ) : (
           <>
