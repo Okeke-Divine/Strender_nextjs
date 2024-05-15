@@ -1,23 +1,23 @@
 import prisma from "@/db";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { redirect } from "next/navigation";
 
-export default async function Comment({ post_id }: { post_id: string }) {
-
-  async function createComment(data:FormData){
-    "use server"
+export default async function Comment({ post_id,post_slug }: { post_id: string,post_slug:string }) {
+  async function createComment(data: FormData) {
+    "use server";
     const content = data.get("content")?.toString();
-    if(!content){
+    if (!content) {
       return;
     }
-  
+
     const comment = await prisma.comment.create({
       data: {
         postId: post_id,
-        content
-      }
-    })
-  
+        content,
+      },
+    });
+    if (comment) {
+      redirect("/post/"+post_slug);
+    }
     return;
   }
 
@@ -30,41 +30,24 @@ export default async function Comment({ post_id }: { post_id: string }) {
     "/assets/images/user-icon-2.png",
   ];
 
-
-  // const handleSubmit = async (e: any) => {
-  //   e.preventDefault(); // Prevent default form submission behavior
-  //   try {
-  //     const response = await axios.post("/api/post/comments/", {
-  //       post_id,
-  //       content: newComment,
-  //     });
-  //     // Assuming the response contains the newly added comment
-  //     setComments([...comments, response.data.data]);
-  //     setNewComment("");
-  //   } catch (error) {
-  //     console.error("Error adding comment:", error);
-  //   }
-  // };
-
   return (
     <>
       <div className="mt-5">
-        {/* <form onSubmit={handleSubmit}>
+        <form action={createComment}>
           <textarea
             placeholder="What's on your mind? (Anonymous)"
             className="outline-none rounded-lg border-2 p-5 w-full"
             required
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
+            name="content"
           ></textarea>
           <br />
           <button
             className="uppercase py-3 px-10 w-fit bg-blue-500 text-white rounded-lg text-sm font-semibold tracking-[1px]"
-            type="submit" // Change type to "submit" to trigger form submission
+            type="submit"
           >
             Submit
           </button>
-        </form> */}
+        </form>
       </div>
       {/* list comments */}
       <div className="mt-2">
