@@ -57,8 +57,8 @@ export default async function CreatePost() {
           />
           <br />
           <select required className="input2 text-bal" name="categoryId">
-            <option hidden disabled>
-              select
+            <option value="" selected disabled>
+              Seletc a category
             </option>
             {categories.map((category: any, index: number) => (
               <option key={index} value={category.id}>
