@@ -5,7 +5,7 @@ import prisma from "@/db";
 export const GET = async (req: Request, res: Response) => {
   const posts = await prisma.post.findMany({
     orderBy: {
-        total_views: 'asc'
+      createdAt: 'desc'
     },
     take: 3
   });
