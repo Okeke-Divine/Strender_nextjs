@@ -107,7 +107,7 @@ export default async function Post({ params }: { params: { title: string } }) {
                   </div>
                 </div>
                 {/* comments */}
-                <Comment post_id={post.id} post_slug={post_slug} />
+                <Comment post_id={post.id} post_slug={post.slug} />
               </div>
               <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
                 {/* <EmailSubscribe /> */}
