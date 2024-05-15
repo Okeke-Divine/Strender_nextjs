@@ -11,7 +11,7 @@ export default function LatestNewsPost({
   previewText: string;
   url: string;
   thumbnail: string;
-  author: string;
+  author: any;
 }) {
   return (
     <>
