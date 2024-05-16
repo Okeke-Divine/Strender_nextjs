@@ -21,7 +21,7 @@ export default function MostReadPostElem({
   const fDate = formatDate(date);
   return (
     <>
-      <Link href={url} className="w-full">
+      <Link href={url} className="w-full site_postLinks">
         <div className="block md:flex gap-x-3 cursor-pointer duration-300 hover:opacity-70">
           <div className="w-full md:w-1/3">
             <div className="bg-blue-200 p-1 w-full h-[150px] md:h-[90px] rounded-lg relative">

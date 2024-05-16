@@ -32,7 +32,7 @@ export default function LatestNewsPost({
           <div className="mt-2">
             <Link
               href={url}
-              className="cursor-pointer cs-text-yellow-1 duration-300 font-bold"
+              className="cursor-pointer cs-text-yellow-1 duration-300 font-bold site_postLinks"
             >
               Read More
             </Link>

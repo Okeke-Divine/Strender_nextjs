@@ -1,28 +1,30 @@
-"use client";
+// "use client";
 import ComponentTitle from "./ComponentTitle";
-import axios from "axios";
+// import axios from "axios";
 import CategoryCardCircle from "./CategoryCardCircle";
-import { useState,useEffect } from "react";
+import prisma from "@/db";
+// import { useState,useEffect } from "react";
 
 export const dynamic = 'force-dynamic'; 
 
-export default function Category(){
-    const [categories, setCategories] = useState([]);
-    const [loading, setLoading] = useState(true);
+export default async function Category(){
+  const categories:any = await prisma.category.findMany();
+    // const [categories, setCategories] = useState([]);
+    // const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchCategories = async () => {
-          try {
-            const response = await axios.get("/api/categories/");
-            setCategories(response.data.data);
-            setLoading(false);
-          } catch (error) {
-            console.error("Error fetching categories:", error);
-          }
-        };
+    // useEffect(() => {
+    //     const fetchCategories = async () => {
+    //       try {
+    //         const response = await axios.get("/api/categories/");
+    //         setCategories(response.data.data);
+    //         setLoading(false);
+    //       } catch (error) {
+    //         console.error("Error fetching categories:", error);
+    //       }
+    //     };
     
-        fetchCategories();
-      }, []);
+    //     fetchCategories();
+    //   }, []);
 
     return (
         <>
@@ -30,14 +32,14 @@ export default function Category(){
             <ComponentTitle title="Category" url="/category" />
             {/* list of sports */}
             <div className="flex gap-x-5 overflow-auto whitespace-nowrap mt-2 scroll-bar-track-2">
-              {loading ? (
+              {/* {loading ? (
                 <>
                   <span className="text-gray-400">Loading...</span>
                 </>
               ) : (
                 ""
-              )}
-              {categories.map((category:any, index) => (
+              )} */}
+              {categories.map((category:any, index:number) => (
                 <CategoryCardCircle
                   title={category.name}
                   thumbnail={category.img_url}
