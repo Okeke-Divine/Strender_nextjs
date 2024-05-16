@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import PartialHero from "@/components/home/PartialHero";
 import Category from "@/components/shared/Category";
