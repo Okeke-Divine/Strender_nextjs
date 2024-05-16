@@ -1,26 +1,32 @@
-"use client"
+"use client";
 import { useEffect } from "react";
 
-const AdsComponent = (props:any) => {
+interface Window {
+  adsbygoogle: { push: (arg: object) => void }[];
+}
+
+
+const AdsComponent = (props: any) => {
   const { dataAdSlot } = props;
 
   useEffect(() => {
     try {
       // (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {}
+      (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+    } catch (e) {
+      console.error("Adsbygoogle error:", e);
+    }
   }, []);
 
   return (
-    <>
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-client="ca-pub-2431766066357656"
-        data-ad-slot={dataAdSlot}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-    </>
+    <ins
+      className="adsbygoogle"
+      style={{ display: "block" }}
+      data-ad-client="ca-pub-2431766066357656"
+      data-ad-slot={dataAdSlot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
   );
 };
 
