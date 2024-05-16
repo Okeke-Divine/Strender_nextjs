@@ -14,7 +14,6 @@ const links: NavbarLinkItem[] = [
   { url: "/", name: "Home", smallScreenOnly: false },
   { url: "/category", name: "Category", smallScreenOnly: false },
   { url: "/discover", name: "Discover", smallScreenOnly: false },
-  // { url: "/news", name: "News" },
   { url: "/about", name: "About", smallScreenOnly: false },
   { url: "/credits", name: "Credits", smallScreenOnly: true },
   { url: "/privacy-policy", name: "Privacy Policy", smallScreenOnly: true },
