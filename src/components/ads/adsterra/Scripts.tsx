@@ -1,10 +1,6 @@
 import Script from "next/script";
 
-type Props = {
-  pId: string;
-};
-
-const AdsterraAdSense: React.FC<Props> = ({ pId }) => {
+const AdsterraAdSense = () => {
   return (
     <Script
       async
