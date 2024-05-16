@@ -1,5 +1,5 @@
 "use client";
-export default function AdsterraAdComponent1() {
+export default function AdsterraAdComponent2() {
   return (
     <>
       <main className="text-white mainComponent" suppressHydrationWarning>

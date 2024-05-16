@@ -1,13 +1,12 @@
-import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import formatDate from "@/utils/shared/formatDate";
 import __Tag from "@/components/shared/__Tag";
 import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 
-export const metadata = {
-  title: "Post",
-};
+// export const metadata = {
+//   title: "Post",
+// };
 
 export default async function Post({ params }: { params: { title: string } }) {
   const slug = params.title;
@@ -58,7 +57,6 @@ export default async function Post({ params }: { params: { title: string } }) {
   return (
     <>
       <main className="mainComponent2 mt-2">
-        <AdsterraAdComponent1 />
         <div className="relative w-full h-[300px] rounded-3xl overflow-hidden shadow-md shadow-yellow-400">
           <img
             // src="/assets/images/banner/pexels-dom-le-roy-3991976.jpg"
@@ -114,7 +112,7 @@ export default async function Post({ params }: { params: { title: string } }) {
             <Comment post_id={post.id} post_slug={post.slug} />
           </div>
           <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
-            {/* <EmailSubscribe /> */}
+                {/* email susccribe */}
           </div>
         </div>
       </main>
