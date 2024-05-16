@@ -58,18 +58,18 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
         />
-        <script
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
-        <script
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
       </head>
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
