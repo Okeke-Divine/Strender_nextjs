@@ -5,7 +5,7 @@ import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 
 export const metadata = {
-  title: "Post",
+  title: "Post"
 };
 
 export default async function Post({ params }: { params: { title: string } }) {
