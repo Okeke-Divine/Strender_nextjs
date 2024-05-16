@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
-import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
-import AdsterraAdComponent2 from "@/components/ads/adsterra/AdsterraAdComponent2";
-import AdsterraAdComponent3 from "@/components/ads/adsterra/AdsterraAdComponent3";
+// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
+// import AdsterraAdComponent2 from "@/components/ads/adsterra/AdsterraAdComponent2";
+// import AdsterraAdComponent3 from "@/components/ads/adsterra/AdsterraAdComponent3";
 
 export default function RootLayout({
   children,
@@ -11,10 +11,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <AdsterraAdComponent1 />
+      {/* <AdsterraAdComponent1 /> */}
       <div>{children}</div>
-      <AdsterraAdComponent2 />
-      <AdsterraAdComponent3 />
+      {/* <AdsterraAdComponent2 /> */}
+      {/* <AdsterraAdComponent3 /> */}
     </>
   );
 }
