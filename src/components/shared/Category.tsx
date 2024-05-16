@@ -40,6 +40,7 @@ export default function Category(){
               {categories.map((category:any, index) => (
                 <CategoryCardCircle
                   title={category.name}
+                  thumbnail={category.img_url}
                   url={"/category/" + category.name}
                   key={index}
                 />
