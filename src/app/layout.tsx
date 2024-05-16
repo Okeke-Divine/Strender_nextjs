@@ -6,7 +6,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
-import AdsterraScript from "@/components/ads/adsterra/Scripts";
+// import AdsterraScript from "@/components/ads/adsterra/Scripts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <AdsterraScript />
+        {/* <AdsterraScript /> */}
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
