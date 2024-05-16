@@ -1,3 +1,4 @@
+// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import prisma from "@/db";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
 
@@ -37,6 +38,7 @@ export default async function CatergoryByName({
   return (
     <>
       <div className="mainComponent">
+      {/* <AdsterraAdComponent1 /> */}
         <div className="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
           {posts.map((post, index) => (
             <LatestNewsPost

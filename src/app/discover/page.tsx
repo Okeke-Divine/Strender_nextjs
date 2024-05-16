@@ -1,4 +1,5 @@
 "use client";
+// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
 import axios from "axios";
 import { useState } from "react";
@@ -24,6 +25,7 @@ export default function DiscoverPage() {
   return (
     <>
       <main className="mainComponent">
+      {/* <AdsterraAdComponent1 /> */}
         <form onSubmit={handleSearch}>
           <div className="flex rounded-lg items-center">
             <div className="w-full">

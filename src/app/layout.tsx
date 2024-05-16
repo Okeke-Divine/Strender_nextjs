@@ -1,3 +1,4 @@
+// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -5,6 +6,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
+// import AdsterraScript from "@/components/ads/adsterra/Scripts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* <AdsterraScript /> */}
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,10 +63,23 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
+        {/* <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
+          crossOrigin="anonymous"
+        ></script> */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
+        {/* <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
+          crossOrigin="anonymous"
+        ></script> */}
       </head>
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
         <div className="">{children}</div>
+        {/* <AdsterraAdComponent1 /> */}
         <div className="mainComponent">
           <LatestNews />
         </div>
