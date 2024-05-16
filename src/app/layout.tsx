@@ -80,7 +80,6 @@ export default function RootLayout({
         <Navbar />
         <div className="">{children}</div>
         {/* <AdsterraAdComponent1 /> */}
-        lol
         <div className="mainComponent">
           <LatestNews />
         </div>
