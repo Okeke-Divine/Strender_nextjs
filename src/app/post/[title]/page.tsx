@@ -3,12 +3,14 @@ import __Tag from "@/components/shared/__Tag";
 import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
+import { incrementTotalViews } from "@/store";
 
 // export const metadata = {
 //   title: "Post",
 // };
 
 export default async function Post({ params }: { params: { title: string } }) {
+  incrementTotalViews();
   const slug = params.title;
 
   if (!slug || slug == "" || slug === null || slug === undefined) {

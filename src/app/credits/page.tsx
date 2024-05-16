@@ -1,10 +1,12 @@
 import CreditsData from "@/data/credits.json";
+import { incrementTotalViews } from "@/store";
 
 export const metadata = {
   title: "Credits",
 };
 
 export default function Credits() {
+  incrementTotalViews();
   return (
     <>
       <main className="mainComponent">

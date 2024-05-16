@@ -1,9 +1,11 @@
 import PrivacyPolicyData from "@/data/PrivacyPolicy.json";
+import { incrementTotalViews } from "@/store";
 export const metadata = {
   title: "Privacy Policy",
 };
 
 export default function PrivacyPolicy() {
+  incrementTotalViews();
   return (
     <>
       <main className="mainComponent">

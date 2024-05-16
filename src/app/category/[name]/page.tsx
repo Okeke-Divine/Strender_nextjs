@@ -1,6 +1,7 @@
 // import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import prisma from "@/db";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
+import { incrementTotalViews } from "@/store";
 
 export const metadata = {
   title: "Category",
@@ -11,6 +12,7 @@ export default async function CatergoryByName({
 }: {
   params: { name: string };
 }) {
+  incrementTotalViews();
   const category_name = decodeURIComponent(params.name);
   const category = await prisma.category.findFirst({
     where: { name: category_name },

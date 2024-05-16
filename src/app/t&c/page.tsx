@@ -1,10 +1,12 @@
 import TC from "@/data/T&C.json";
+import { incrementTotalViews } from "@/store";
 
 export const metadata = {
   title: "Terms and Conditions",
 };
 
 export default function TermsAndConditions() {
+  incrementTotalViews();
   return (
     <>
       <main className="mainComponent">

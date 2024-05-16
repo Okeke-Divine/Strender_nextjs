@@ -1,10 +1,12 @@
 "use client";
 // import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
+import { incrementTotalViews } from "@/store";
 import axios from "axios";
 import { useState } from "react";
 
 export default function DiscoverPage() {
+  incrementTotalViews();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
