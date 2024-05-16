@@ -5,6 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
+import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,6 +74,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      <AdsterraAdSense />
     </html>
   );
 }
