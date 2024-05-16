@@ -27,7 +27,7 @@ export default function RelatedNews() {
   return (
     <>
       <div className="mt-5">
-        <ComponentTitle title="Latest News" url="/discover?sort_by=latest" />
+        <ComponentTitle title="Related News" url="" />
         <div className="mt-1 text-gray-400 font-semibold">
           {lastestNewsDesc}
         </div>
