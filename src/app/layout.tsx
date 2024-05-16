@@ -6,6 +6,7 @@ import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
 import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
+import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,6 +66,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
+        <AdsterraAdComponent1 />
         <div className="">{children}</div>
         <div className="mainComponent">
           <LatestNews />
