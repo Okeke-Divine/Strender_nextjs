@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
+import RelatedNews from "@/components/shared/RelatedNews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -74,6 +75,7 @@ export default function RootLayout({
         <Navbar />
         <div className="">{children}</div>
         <div className="mainComponent"><LatestNews /></div>
+        <div className="mainComponent"><RelatedNews /></div>
         <Footer />
       </body>
     </html>
