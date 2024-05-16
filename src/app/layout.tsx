@@ -1,3 +1,4 @@
+import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -76,8 +77,13 @@ export default function RootLayout({
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
         <div className="">{children}</div>
-        <div className="mainComponent"><LatestNews /></div>
-        <div className="mainComponent"><RelatedNews /></div>
+        <AdsterraAdComponent1 />
+        <div className="mainComponent">
+          <LatestNews />
+        </div>
+        <div className="mainComponent">
+          <RelatedNews />
+        </div>
         <Footer />
       </body>
     </html>
