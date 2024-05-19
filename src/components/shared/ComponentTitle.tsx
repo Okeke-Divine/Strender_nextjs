@@ -15,7 +15,7 @@ export default function ComponentTitle({
           {(url != null || url == "") ? (
             <Link
               href={url}
-              className="cs-text-yellow-1 opacity-70 hover:opacity-100 duration-300 font-bold"
+              className="cs-text-yellow-1 opacity-70 hover:opacity-100 duration-300 font-bold site_postLinks site_postLinks_componentTitle"
             >
               See More
             </Link>

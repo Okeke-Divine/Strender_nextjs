@@ -39,7 +39,7 @@ export default function Navbar() {
               </div>
               <div>
                 {" "}
-                <Link href="/">{site_name}</Link>
+                <Link href="/" className="site_postLinks">{site_name}</Link>
               </div>
             </div>
             {/* begin link container */}
@@ -55,7 +55,7 @@ export default function Navbar() {
                       link.url == pathname
                         ? "text-white font-bold border-b-[2px]"
                         : "text-gray-400"
-                    } border-yellow-300 duration-300 hover:text-white ${
+                    } border-yellow-300 duration-300 hover:text-white site_postLinks ${
                       link.smallScreenOnly ? "block sm:hidden" : ""
                     } w-fit`}
                     href={link.url}
@@ -80,7 +80,7 @@ export default function Navbar() {
                 Signup
               </button>
             </div> */}
-            <Link href="/discover?action=search">
+            <Link className="site_postLinks" href="/discover?action=search">
               <div className="rounded-full bg-gray-600 w-10 h-10 text-white flex justify-center items-center cursor-pointer">
                 <i className={`fi fi-ts-category relative top-[0.1rem]`}></i>
               </div>

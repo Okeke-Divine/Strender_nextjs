@@ -11,7 +11,7 @@ export default function CategoryCardCircle({
 }) {
   return (
     <>
-      <Link href={url} className="site_postLinks">
+      <Link href={url} className="site_postLinks site_postLinks_category">
         <div className="w-fit cursor-pointer duration-300 hover:opacity-70">
           <div className="flex justify-center">
             <div className="w-16 h-16 rounded-full bg-blue-200 overflow-hidden">
