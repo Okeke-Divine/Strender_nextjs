@@ -1,4 +1,5 @@
 // import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
+import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import AboutJson from "@/data/about.json";
 import { incrementTotalViews } from "@/store";
 
@@ -11,6 +12,7 @@ export default function About() {
   return (
     <>
     {/* <AdsterraAdComponent1 /> */}
+    <AdsterraAdComponent1 />
       <main className="mainComponent">
         {AboutJson.map((section, index) => (
           <div key={index} className="mb-8">
