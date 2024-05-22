@@ -2,13 +2,26 @@
 import { useEffect, useState } from "react";
 
 export default function ContactUsClientComponent() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(true);
   function successPage() {
     setIsSubmitted(true);
   }
 
   function submitForm(event:any) {
     console.log(event);
+  }
+
+  if(isSubmitted === true){
+    return (
+        <>
+            <main className="mainComponent">
+                <div className="min-h-[40vh]">
+                    <div className="text-4xl font-bold text-white">Success</div>
+                    <div className="text-white">Thanks for contact us, we'll get back to you in a day or two.</div>
+                </div>
+            </main>
+        </>
+    )
   }
 
   return (
