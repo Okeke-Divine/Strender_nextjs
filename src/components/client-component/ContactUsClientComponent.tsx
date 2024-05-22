@@ -35,7 +35,7 @@ export default function ContactUsClientComponent() {
                 Success
               </div>
               <div className="text-white text-center w-full">
-                Thanks for contact us, we'll get back to you in a day or two.
+                Thanks for contact us, we&apos;ll get back to you in a day or two.
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function ContactUsClientComponent() {
         </div>
         <div>
           <p className="text-white">
-            Send us a message and we'll reply you via email.
+            Send us a message and we&apos;ll reply you via email.
           </p>
         </div>
         <div>

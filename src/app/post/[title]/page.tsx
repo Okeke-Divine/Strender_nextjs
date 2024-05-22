@@ -4,6 +4,7 @@ import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 import { incrementTotalViews } from "@/store";
+import Head from "next/head"
 
 // export const metadata = {
 //   title: "Post",
@@ -58,6 +59,9 @@ export default async function Post({ params }: { params: { title: string } }) {
 
   return (
     <>
+    <Head>
+      <title>Lol</title>
+    </Head>
       <main className="mainComponent2 mt-2">
         <div className="relative w-full h-[300px] rounded-3xl overflow-hidden shadow-md shadow-yellow-400">
           <img
