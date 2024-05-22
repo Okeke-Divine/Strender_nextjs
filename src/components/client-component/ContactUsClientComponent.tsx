@@ -14,11 +14,15 @@ export default function ContactUsClientComponent() {
   }
 
   function submitForm(event: any) {
+    event.preventDefault();
     toggleFormSubmitState();
-    console.log(event);
-    // promise 4 seconds delay
-    successPage();
-    toggleFormSubmitState();
+    new Promise((reslove) => {
+      setTimeout(reslove, 3000);
+    }).then(() => {
+      successPage();
+      toggleFormSubmitState();
+    });
+
   }
 
   if (isSubmitted === true) {
@@ -117,8 +121,15 @@ export default function ContactUsClientComponent() {
             </div>
             {/* button */}
             <div>
-              <button disabled={formSubmitIsLoading} className={`${(formSubmitIsLoading === true) ? 'bg-orange-300' : 'bg-orange-400'} text-white py-2 px-3 rounded-lg`}>
-                {(formSubmitIsLoading === true) ? 'Submitting...' : 'Submit'}
+              <button
+                disabled={formSubmitIsLoading}
+                className={`${
+                  formSubmitIsLoading === true
+                    ? "bg-orange-300"
+                    : "bg-orange-400"
+                } text-white py-2 px-3 rounded-lg`}
+              >
+                {formSubmitIsLoading === true ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
