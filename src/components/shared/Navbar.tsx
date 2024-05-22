@@ -15,6 +15,7 @@ const links: NavbarLinkItem[] = [
   { url: "/category", name: "Category", smallScreenOnly: false },
   { url: "/discover", name: "Discover", smallScreenOnly: false },
   { url: "/about", name: "About", smallScreenOnly: false },
+  { url: "/contact-us", name: "Contact Us", smallScreenOnly: false },
   { url: "/credits", name: "Credits", smallScreenOnly: true },
   { url: "/privacy-policy", name: "Privacy Policy", smallScreenOnly: true },
   { url: "/t&c", name: "T & C", smallScreenOnly: true },
