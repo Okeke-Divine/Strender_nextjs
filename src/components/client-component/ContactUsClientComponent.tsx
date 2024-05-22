@@ -7,21 +7,27 @@ export default function ContactUsClientComponent() {
     setIsSubmitted(true);
   }
 
-  function submitForm(event:any) {
+  function submitForm(event: any) {
     console.log(event);
   }
 
-  if(isSubmitted === true){
+  if (isSubmitted === true) {
     return (
-        <>
-            <main className="mainComponent">
-                <div className="min-h-[40vh]">
-                    <div className="text-4xl font-bold text-white">Success</div>
-                    <div className="text-white">Thanks for contact us, we'll get back to you in a day or two.</div>
-                </div>
-            </main>
-        </>
-    )
+      <>
+        <main className="mainComponent">
+          <div className="min-h-[40vh] flex justify-center items-center">
+            <div className="w-fit">
+              <div className="text-4xl font-bold text-white text-center w-full">
+                Success
+              </div>
+              <div className="text-white text-center w-full">
+                Thanks for contact us, we'll get back to you in a day or two.
+              </div>
+            </div>
+          </div>
+        </main>
+      </>
+    );
   }
 
   return (
