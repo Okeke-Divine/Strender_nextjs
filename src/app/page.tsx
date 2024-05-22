@@ -13,7 +13,6 @@ export default function Home() {
       <PartialHero />
       <main className="mainComponent">
         <Category />
-        <AdsterraAdIframe1 />
         <MostRead />
         <AdsterraAdIframe1 />
       </main>
