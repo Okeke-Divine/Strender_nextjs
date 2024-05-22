@@ -104,7 +104,6 @@ export default function Footer() {
           <Link
             href="https://okekedivine.vercel.app"
             target={"_blank"}
-            className="site_postLinks"
           >
             <span className="cs-text-yellow-1">Dev Divine</span>
           </Link>{" "}
