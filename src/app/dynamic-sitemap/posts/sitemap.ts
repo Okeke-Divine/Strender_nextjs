@@ -22,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const sitemap_posts = posts.map(({ slug,createdAt }) => ({
-    url: `${NEXT_PUBLIC_BASE_URL}/post`+slug,
+    url: `${NEXT_PUBLIC_BASE_URL}/post/`+slug,
     lastModified: createdAt,
     changeFrequency: changeFrequency,
   }));

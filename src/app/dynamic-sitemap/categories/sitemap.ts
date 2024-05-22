@@ -22,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const categories_posts = categories.map(({ name }) => ({
-    url: `${NEXT_PUBLIC_BASE_URL}/category`+name,
+    url: `${NEXT_PUBLIC_BASE_URL}/category/`+name,
     lastModified: new Date().toISOString(),
     changeFrequency: changeFrequency,
   }));
