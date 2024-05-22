@@ -97,7 +97,7 @@ export default function Footer() {
           &copy; {config.site_name} 2024 - Built by{" "}
           <Link href="https://okekedivine.vercel.app" target={"_blank"} className="site_postLinks">
             <span className="cs-text-yellow-1">Dev Divine</span>
-          </Link>
+          </Link> | {config.site_name} claims no right to any content here
         </div>
       </div>
     </>
