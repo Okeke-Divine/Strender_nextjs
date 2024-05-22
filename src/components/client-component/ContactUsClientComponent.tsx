@@ -2,6 +2,15 @@
 import { useEffect, useState } from "react";
 
 export default function ContactUsClientComponent() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  function successPage() {
+    setIsSubmitted(true);
+  }
+
+  function submitForm(event:any) {
+    console.log(event);
+  }
+
   return (
     <>
       <main className="mainComponent">
@@ -14,7 +23,7 @@ export default function ContactUsClientComponent() {
           </p>
         </div>
         <div>
-          <form className="pt-5">
+          <form className="pt-5" onSubmit={(e) => submitForm(e)}>
             {/* fullname */}
             <div className="mb-3">
               <div className="text-white">
@@ -24,6 +33,7 @@ export default function ContactUsClientComponent() {
                 <input
                   id="fName"
                   name="fName"
+                  required
                   placeholder="Full Name"
                   className="p-2 border w-full border-gray-200 rounded-lg"
                 />
@@ -37,7 +47,9 @@ export default function ContactUsClientComponent() {
               <div>
                 <input
                   id="email"
+                  required
                   name="email"
+                  type="email"
                   placeholder="Email"
                   className="p-2 border w-full border-gray-200 rounded-lg"
                 />
@@ -52,13 +64,14 @@ export default function ContactUsClientComponent() {
                 <input
                   id="subject"
                   name="subject"
+                  required
                   placeholder="Subject"
                   className="p-2 border w-full border-gray-200 rounded-lg"
                 />
               </div>
             </div>
             {/* message */}
-            <div className="mb-5">
+            <div className="mb-3">
               <div className="text-white">
                 <label htmlFor="msg">Message</label>
               </div>
@@ -66,6 +79,7 @@ export default function ContactUsClientComponent() {
                 <textarea
                   rows={5}
                   id="msg"
+                  required
                   name="msg"
                   placeholder="Message"
                   className="p-2 border w-full border-gray-200 rounded-lg"
