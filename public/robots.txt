@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /p
 Crawl-delay: 20
 
 User-agent: BingBot
