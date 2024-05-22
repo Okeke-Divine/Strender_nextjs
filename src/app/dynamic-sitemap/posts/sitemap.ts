@@ -17,12 +17,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await prisma.post.findMany({
     select: {
       slug: true,
+      createdAt:true
     },
   });
 
-  const sitemap_posts = posts.map(({ slug }) => ({
+  const sitemap_posts = posts.map(({ slug,createdAt }) => ({
     url: `${NEXT_PUBLIC_BASE_URL}/`+slug,
-    lastModified: new Date().toISOString(),
+    lastModified: createdAt,
     changeFrequency: changeFrequency,
   }));
 
