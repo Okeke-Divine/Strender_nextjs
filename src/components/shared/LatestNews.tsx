@@ -4,6 +4,7 @@ import ComponentTitle from "./ComponentTitle";
 import prisma from "@/db";
 import config from "@/data/config.json";
 import LatestNewsPost from "./LatestNewsPost";
+import AdsterraAdIframe1 from "@/components/ads/adsterra/AdsterraAdIframe1";
 // import axios from "axios";
 
 export default async function LatestNews() {
@@ -61,6 +62,7 @@ export default async function LatestNews() {
           </div>
         </div>
       </div>
+      <AdsterraAdIframe1 />
     </>
   );
 }

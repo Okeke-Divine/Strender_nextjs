@@ -4,7 +4,7 @@ import Category from "@/components/shared/Category";
 import MostRead from "@/components/shared/MostRead";
 import { incrementTotalViews } from "@/store";
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   incrementTotalViews();
@@ -15,6 +15,7 @@ export default function Home() {
         <Category />
         <AdsterraAdIframe1 />
         <MostRead />
+        <AdsterraAdIframe1 />
       </main>
     </>
   );

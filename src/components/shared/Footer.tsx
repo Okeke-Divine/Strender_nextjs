@@ -1,5 +1,6 @@
 import Link from "next/link";
 import config from "@/data/config.json";
+import AdsterraAdIframe1 from "../ads/adsterra/AdsterraAdIframe1";
 
 interface FooterLinkType {
   name: string;
@@ -110,6 +111,7 @@ export default function Footer() {
           | {config.site_name} claims no right to any content here
         </div>
       </div>
+      <AdsterraAdIframe1 />
     </>
   );
 }
