@@ -5,6 +5,8 @@ import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 import { incrementTotalViews } from "@/store";
 import Head from "next/head"
+import AdsterraAdIframe1 from "@/components/ads/adsterra/AdsterraAdIframe1";
+import AdsterraAdIframe2 from "@/components/ads/adsterra/AdsterraAdIframe2";
 
 // export const metadata = {
 //   title: "Post",
@@ -116,6 +118,7 @@ export default async function Post({ params }: { params: { title: string } }) {
           </div>
           <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
                 {/* email susccribe */}
+                <AdsterraAdIframe2 />
           </div>
         </div>
       </main>
