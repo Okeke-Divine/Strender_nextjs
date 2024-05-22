@@ -1,3 +1,4 @@
+import AdsterraAdIframe1 from "@/components/ads/adsterra/AdsterraAdIframe1";
 import PartialHero from "@/components/home/PartialHero";
 import Category from "@/components/shared/Category";
 import MostRead from "@/components/shared/MostRead";
@@ -12,6 +13,7 @@ export default function Home() {
       <PartialHero />
       <main className="mainComponent">
         <Category />
+        <AdsterraAdIframe1 />
         <MostRead />
       </main>
     </>
