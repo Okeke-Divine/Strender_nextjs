@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://strender.vercel.app/home</loc>
+    <loc>https://strender.vercel.app/</loc>
     <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://strender.vercel.app/</loc>
+    <loc>https://strender.vercel.app/about</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+    <url>
+    <loc>https://strender.vercel.app/contact-us</loc>
     <changefreq>daily</changefreq>
   </url>
 
@@ -18,6 +23,21 @@
 
   <url>
     <loc>https://strender.vercel.app/discover</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+    <url>
+    <loc>https://strender.vercel.app/privacy-policy</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+    <url>
+    <loc>https://strender.vercel.app/t&c</loc>
+    <changefreq>daily</changefreq>
+  </url>
+
+    <url>
+    <loc>https://strender.vercel.app/credits</loc>
     <changefreq>daily</changefreq>
   </url>
 
