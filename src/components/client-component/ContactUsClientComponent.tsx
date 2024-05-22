@@ -2,13 +2,22 @@
 import { useEffect, useState } from "react";
 
 export default function ContactUsClientComponent() {
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formSubmitIsLoading, setFormSubmitIsLoading] = useState(false);
+
+  function toggleFormSubmitState() {
+    setFormSubmitIsLoading(!formSubmitIsLoading);
+  }
+
   function successPage() {
     setIsSubmitted(true);
   }
 
   function submitForm(event: any) {
+    toggleFormSubmitState();
     console.log(event);
+    // promise 4 seconds delay
+    successPage();
   }
 
   if (isSubmitted === true) {
