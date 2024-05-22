@@ -18,6 +18,7 @@ export default function ContactUsClientComponent() {
     console.log(event);
     // promise 4 seconds delay
     successPage();
+    toggleFormSubmitState();
   }
 
   if (isSubmitted === true) {
@@ -116,8 +117,8 @@ export default function ContactUsClientComponent() {
             </div>
             {/* button */}
             <div>
-              <button className="bg-orange-400 text-white py-2 px-3 rounded-lg">
-                Submit
+              <button disabled={formSubmitIsLoading} className={`${(formSubmitIsLoading === true) ? 'bg-orange-300' : 'bg-orange-400'} text-white py-2 px-3 rounded-lg`}>
+                {(formSubmitIsLoading === true) ? 'Submitting...' : 'Submit'}
               </button>
             </div>
           </form>
