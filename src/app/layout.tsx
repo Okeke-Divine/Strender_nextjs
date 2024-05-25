@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
+import GoogleAnalytics  from "@/components/shared/GoogleAnalytics "
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
@@ -27,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics  />
       <head>
         <AdsterraAdSense />
         <meta charSet="UTF-8" />
@@ -67,10 +70,21 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
       </head>
+      {/* Begin Money tag */}
       <Script src="https://glizauvo.net/401/7529982" />
+      <Script src="https://fortorterrar.com/400/7529967" />
+      {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
         <AdsterraAdComponent1 />
+        <div className="mainLayout">
+          <Link
+            href="https://dubzenom.com/4/7530232"
+            className="text-xl font-bold text-white"
+          >
+            Suprise!!!
+          </Link>
+        </div>
         <div className="">{children}</div>
         <div className="mainComponent">
           <LatestNews />
