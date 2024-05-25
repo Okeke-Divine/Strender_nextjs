@@ -110,7 +110,7 @@ export default function Footer() {
           | {config.site_name} claims no right to any content here
         </div>
       </div>
-      <AdsterraAdIframe1 />
+      {/* <AdsterraAdIframe1 /> */}
     </>
   );
 }

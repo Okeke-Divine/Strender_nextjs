@@ -14,7 +14,7 @@ export default function Home() {
       <main className="mainComponent">
         <Category />
         <MostRead />
-        <AdsterraAdIframe1 />
+        {/* <AdsterraAdIframe1 /> */}
       </main>
     </>
   );

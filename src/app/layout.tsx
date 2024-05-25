@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
@@ -66,6 +67,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
       </head>
+      <Script src="https://glizauvo.net/401/7529982" />
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
         <AdsterraAdComponent1 />
