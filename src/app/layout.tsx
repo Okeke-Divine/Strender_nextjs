@@ -29,6 +29,7 @@ export default function RootLayout({
       <head>
         <AdsterraAdSense />
         <meta charSet="UTF-8" />
+        <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
