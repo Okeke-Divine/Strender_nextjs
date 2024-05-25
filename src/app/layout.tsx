@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
-import GoogleAnalytics  from "@/components/shared/GoogleAnalytics "
+import GoogleAnalytics  from "@/components/shared/GoogleAnalytics"
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
