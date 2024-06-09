@@ -4,13 +4,6 @@ import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 import { incrementTotalViews } from "@/store";
-import Head from "next/head";
-import AdsterraAdIframe1 from "@/components/ads/adsterra/AdsterraAdIframe1";
-import AdsterraAdIframe2 from "@/components/ads/adsterra/AdsterraAdIframe2";
-
-// export const metadata = {
-//   title: "Post",
-// };
 
 export async function generateMetadata({
   params: { slug },
@@ -23,12 +16,16 @@ export async function generateMetadata({
     },
     select: {
       title: true,
-      summary: true
+      summary: true,
+      img_url: true
     },
   });
   return {
-    title: post?.title,
-    description: post?.summary
+    title: post?.title + " | Post",
+    description: post?.summary,
+    image: post?.img_url,
+    'twitter:card': 'summary_large_image', 
+    'twitter:image': post?.img_url
   };
 }
 
@@ -138,7 +135,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </div>
           <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
             {/* email susccribe */}
-            <AdsterraAdIframe2 />
+            {/* <AdsterraAdIframe2 /> */}
           </div>
         </div>
       </main>
