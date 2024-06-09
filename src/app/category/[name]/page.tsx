@@ -3,17 +3,13 @@ import prisma from "@/db";
 import LatestNewsPost from "@/components/shared/LatestNewsPost";
 import { incrementTotalViews } from "@/store";
 
-export const metadata = {
-  title: "Category",
-};
-
 export async function generateMetadata({params:{name}}:{params:{name:string}}){
   const category_name = decodeURIComponent(name);
   const category = await prisma.category.findFirst({
     where: { name: category_name },select:{name:true}
   });
   return {
-    title: category?.name
+    title: category?.name + " | Category"
   }
 }
 
