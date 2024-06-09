@@ -23,10 +23,12 @@ export async function generateMetadata({
     },
     select: {
       title: true,
+      summary: true
     },
   });
   return {
     title: post?.title,
+    description: post?.summary
   };
 }
 

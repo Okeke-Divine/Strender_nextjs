@@ -7,6 +7,16 @@ export const metadata = {
   title: "Category",
 };
 
+export async function generateMetadata({params:{name}}:{params:{name:string}}){
+  const category_name = decodeURIComponent(name);
+  const category = await prisma.category.findFirst({
+    where: { name: category_name },select:{name:true}
+  });
+  return {
+    title: category?.name
+  }
+}
+
 export default async function CatergoryByName({
   params,
 }: {
