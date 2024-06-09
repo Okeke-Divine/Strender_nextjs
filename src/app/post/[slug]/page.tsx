@@ -4,7 +4,7 @@ import Comment from "@/components/shared/Comment";
 import AdsComponent from "@/components/shared/AdComponent";
 import prisma from "@/db";
 import { incrementTotalViews } from "@/store";
-import Head from "next/head"
+import Head from "next/head";
 import AdsterraAdIframe1 from "@/components/ads/adsterra/AdsterraAdIframe1";
 import AdsterraAdIframe2 from "@/components/ads/adsterra/AdsterraAdIframe2";
 
@@ -12,9 +12,27 @@ import AdsterraAdIframe2 from "@/components/ads/adsterra/AdsterraAdIframe2";
 //   title: "Post",
 // };
 
-export default async function Post({ params }: { params: { title: string } }) {
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const post = await prisma.post.findFirst({
+    where: {
+      slug: slug,
+    },
+    select: {
+      title: true,
+    },
+  });
+  return {
+    title: post?.title,
+  };
+}
+
+export default async function Post({ params }: { params: { slug: string } }) {
   incrementTotalViews();
-  const slug = params.title;
+  const slug = params.slug;
 
   if (!slug || slug == "" || slug === null || slug === undefined) {
     return (
@@ -117,8 +135,8 @@ export default async function Post({ params }: { params: { title: string } }) {
             <Comment post_id={post.id} post_slug={post.slug} />
           </div>
           <div className="mt-5 md:mt-0 w-full md:w-2/6 border-l-2 h-fit p-5">
-                {/* email susccribe */}
-                <AdsterraAdIframe2 />
+            {/* email susccribe */}
+            <AdsterraAdIframe2 />
           </div>
         </div>
       </main>
