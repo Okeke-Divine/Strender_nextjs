@@ -16,13 +16,13 @@ export async function generateMetadata({
     },
     select: {
       title: true,
-      content: true,
+      summary: true,
       img_url: true
     },
   });
   return {
     title: post?.title + " | Post",
-    description: post?.content,
+    description: post?.summary,
     image: post?.img_url,
     'twitter:card': 'summary_large_image', 
     'twitter:image': post?.img_url
