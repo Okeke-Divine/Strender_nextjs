@@ -82,7 +82,7 @@ export default function RootLayout({
             href="https://dubzenom.com/4/7530232"
             className="text-xl font-bold text-white"
           >
-            Suprise!!!
+            Suprise!!! (2.0)
           </Link>
         </div>
         <div className="">{children}</div>
