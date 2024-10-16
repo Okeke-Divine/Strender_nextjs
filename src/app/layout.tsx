@@ -31,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalytics  />
       <head>
-        <AdsterraAdSense />
+        {/* <AdsterraAdSense /> */}
         <meta charSet="UTF-8" />
-        <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" />
+        {/* <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" /> */}
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -66,17 +66,17 @@ export default function RootLayout({
           href="https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
         />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
+        {/* <meta name="google-adsense-account" content="ca-pub-2431766066357656" /> */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="google-adsense-account" content="ca-pub-2431766066357656" />
+        {/* <meta name="google-adsense-account" content="ca-pub-2431766066357656" /> */}
       </head>
       {/* Begin Money tag */}
-      <Script src="https://glizauvo.net/401/7529982" />
-      <Script src="https://fortorterrar.com/400/7529967" />
+      {/* <Script src="https://glizauvo.net/401/7529982" /> */}
+      {/* <Script src="https://fortorterrar.com/400/7529967" /> */}
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
-        <AdsterraAdComponent1 />
+        {/* <AdsterraAdComponent1 /> */}
         <div className="mainLayout">
           <Link
             href="https://dubzenom.com/4/7530232"
