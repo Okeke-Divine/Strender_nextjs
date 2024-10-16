@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
-import GoogleAnalytics  from "@/components/shared/GoogleAnalytics"
+import GoogleAnalytics from "@/components/shared/GoogleAnalytics"
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
@@ -29,8 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleAnalytics  />
       <head>
+        <GoogleAnalytics />
         {/* <AdsterraAdSense /> */}
         <meta charSet="UTF-8" />
         {/* <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" /> */}
@@ -78,12 +78,12 @@ export default function RootLayout({
         <Navbar />
         {/* <AdsterraAdComponent1 /> */}
         <div className="mainLayout">
-          <Link
+          {/* <Link
             href="https://dubzenom.com/4/7530232"
             className="text-xl font-bold text-white"
           >
             Suprise!!! (2.0)
-          </Link>
+          </Link> */}
         </div>
         <div className="">{children}</div>
         <div className="mainComponent">

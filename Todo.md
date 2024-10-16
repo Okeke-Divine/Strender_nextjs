@@ -1,2 +1,1 @@
-- strender google anlytics
 - strender connect to ads
