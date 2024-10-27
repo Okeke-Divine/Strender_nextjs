@@ -79,6 +79,7 @@ export default function RootLayout({
       {/* Begin Money tag */}
       <Script src="https://glizauvo.net/401/7529982" />
       <Script src="https://fortorterrar.com/400/7529967" />
+      <Script async="async" data-cfasync="false" src="//thubanoa.com/1?z=8427012" />
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
