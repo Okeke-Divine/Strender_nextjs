@@ -37,7 +37,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         {/* <AdsterraAdSense /> */}
         <meta charSet="UTF-8" />
-        {/* <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" /> */}
+        <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -77,8 +77,8 @@ export default function RootLayout({
         <meta name="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" content="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" />
       </head>
       {/* Begin Money tag */}
-      {/* <Script src="https://glizauvo.net/401/7529982" /> */}
-      {/* <Script src="https://fortorterrar.com/400/7529967" /> */}
+      <Script src="https://glizauvo.net/401/7529982" />
+      <Script src="https://fortorterrar.com/400/7529967" />
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
