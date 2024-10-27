@@ -5,8 +5,7 @@ export default function HilltopAdBanner1() {
         <div>
             <Script id="hilltop-ad-banner-1" strategy="afterInteractive">
                 {`
-            alert('me');
-                (function(wtcws){
+g                (function(wtcws){
                     var d = document,
                         s = d.createElement('script'),
                         l = d.scripts[d.scripts.length - 1];
