@@ -10,7 +10,7 @@ import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
 import MyAdCashAdScript from "@/components/ads/myadcash/MyAdCashAdScript"
 import MyAdCashAdBanner1 from "@/components/ads/myadcash/MyAdCashAdBanner1"
-import HilltopAdBanner1 from "@/components/ads/hilltop/HilltopAdBanner1"
+import HilltopAdBanner1 from "@/components/ads/Hilltop/HilltopAdBanner1"
 // import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
 // import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 
