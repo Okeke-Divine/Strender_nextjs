@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-export default function HilltopAdBanner1() {
+export default function MyAdCashAdBanner1() {
     return (
         <div>
             <Script>
