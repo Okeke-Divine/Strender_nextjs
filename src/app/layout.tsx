@@ -8,8 +8,9 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
-import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
-import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
+import HilltopAdScript from "@/components/ads/Hilltop/HilltopAdScript"
+// import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
+// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,12 +70,15 @@ export default function RootLayout({
         {/* <meta name="google-adsense-account" content="ca-pub-2431766066357656" /> */}
         <link rel="manifest" href="/manifest.json" />
         {/* <meta name="google-adsense-account" content="ca-pub-2431766066357656" /> */}
+        {/* hilltop ads */}
+        <meta name="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" content="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" />
       </head>
       {/* Begin Money tag */}
       {/* <Script src="https://glizauvo.net/401/7529982" /> */}
       {/* <Script src="https://fortorterrar.com/400/7529967" /> */}
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
+        <HilltopAdScript />
         <Navbar />
         {/* <AdsterraAdComponent1 /> */}
         <div className="mainLayout">
