@@ -2,8 +2,10 @@ import Script from "next/script";
 
 export default function HilltopAdBanner1() {
     return (
-        <Script id="hilltop-ad-banner-1" strategy="afterInteractive">
-            {`
+        <div>
+            <Script id="hilltop-ad-banner-1" strategy="afterInteractive">
+                {`
+            alert('me');
                 (function(wtcws){
                     var d = document,
                         s = d.createElement('script'),
@@ -15,6 +17,7 @@ export default function HilltopAdBanner1() {
                     l.parentNode.insertBefore(s, l);
                 })({})
             `}
-        </Script>
+            </Script>
+        </div>
     );
 }
