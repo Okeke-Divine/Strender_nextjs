@@ -11,8 +11,8 @@ import RelatedNews from "@/components/shared/RelatedNews";
 import MyAdCashAdScript from "@/components/ads/myadcash/MyAdCashAdScript"
 import MyAdCashAdBanner1 from "@/components/ads/myadcash/MyAdCashAdBanner1"
 import HilltopAdBanner1 from "@/components/ads/Hilltop/HilltopAdBanner1"
-// import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
-// import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
+import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
+import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,9 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <MyAdCashAdScript />
+        {/* <MyAdCashAdScript /> */}
         <GoogleAnalytics />
-        {/* <AdsterraAdSense /> */}
+        <AdsterraAdSense />
         <meta charSet="UTF-8" />
         <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" />
         <meta name="robots" content="index, follow" />
@@ -77,15 +77,15 @@ export default function RootLayout({
         <meta name="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" content="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" />
       </head>
       {/* Begin Money tag */}
-      <Script src="https://glizauvo.net/401/7529982" />
-      <Script src="https://fortorterrar.com/400/7529967" />
+      {/* <Script src="https://glizauvo.net/401/7529982" /> */}
+      {/* <Script src="https://fortorterrar.com/400/7529967" /> */}
       {/* <Script async={true} data-cfasync="false" src="//thubanoa.com/1?z=8427012" /> */}
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
-        <MyAdCashAdBanner1 />
-        <HilltopAdBanner1 />
-        {/* <AdsterraAdComponent1 /> */}
+        {/* <MyAdCashAdBanner1 /> */}
+        {/* <HilltopAdBanner1 /> */}
+        <AdsterraAdComponent1 />
         <div className="mainLayout">
           {/* <Link
             href="https://dubzenom.com/4/7530232"
