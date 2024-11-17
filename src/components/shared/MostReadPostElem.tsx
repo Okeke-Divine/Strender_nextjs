@@ -34,7 +34,7 @@ export default function MostReadPostElem({
           </div>
           <div className="mt-2 md:mt-0 w-full md:w-2/3">
             <div className="font-bold text-white">{title}</div>
-            <div className="text-gray-400 font-semibold">{author}</div>
+            {/* <div className="text-gray-400 font-semibold">{author}</div> */}
             <div className="block md:flex text-gray-400 gap-x-2 justify-between items-center">
               <div>{fDate}</div>
               <div className="hidden md:block">

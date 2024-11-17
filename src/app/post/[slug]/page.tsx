@@ -108,7 +108,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
             <div className="my-3 font-bold text-2xl">{post.title}</div>
             {/* post author, date, views */}
             <div className="flex items-center gap-x-3 font-semibold mt-1">
-              <div>{post.author}</div>
+              {/* <div>{post.author}</div> */}
               <div className="text-gray-500">{fDate}</div>
               <div>.</div>
               <div className="text-gray-500"> {post.total_views} views</div>

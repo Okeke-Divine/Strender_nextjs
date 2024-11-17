@@ -26,7 +26,7 @@ export default function LatestNewsPost({
           </div>
           <div>
             <div className="mt-3 font-bold text-xl text-white">{title}</div>
-            <div className="uppercase text-gray-400">{author}</div>
+            {/* <div className="uppercase text-gray-400">{author}</div> */}
           </div>
           <div className="text-gray-400 mt-2">{previewText}</div>
           <div className="mt-2">
