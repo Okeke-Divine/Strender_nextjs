@@ -11,7 +11,7 @@ export default async function LatestNews() {
     orderBy: {
       createdAt: "desc",
     },
-    take: 3,
+    take: 9,
   });
   const lastestNewsDesc = config.lastes_news_description;
   // const lastestNewsDesc = config.lastes_news_description;

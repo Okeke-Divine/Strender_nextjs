@@ -40,7 +40,10 @@ export default async function CatergoryByName({
     where: {
       categoryId: category.id,
     },
-    take: 10,
+    orderBy: {
+      createdAt: 'desc', 
+    },
+    take: 9,
   });
 
   return (
