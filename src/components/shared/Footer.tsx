@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="w-[100%] my-3">
           <div className="w-full bg-gray-700 h-[1px]"></div>
         </div>
-        <div className="text-center text-white font-semibold text-md">
+        {/* <div className="text-center text-white font-semibold text-md">
           &copy; {config.site_name} 2024 - Built by{" "}
           <Link
             href="https://okekedivine.vercel.app"
@@ -108,7 +108,7 @@ export default function Footer() {
             <span className="cs-text-yellow-1">Dev Divine</span>
           </Link>{" "}
           | {config.site_name} claims no right to any content here
-        </div>
+        </div> */}
       </div>
       {/* <AdsterraAdIframe1 /> */}
     </>

@@ -74,6 +74,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         {/* <meta name="google-adsense-account" content="ca-pub-2431766066357656" /> */}
         {/* hilltop ads */}
+        <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113"></meta>
         <meta name="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" content="fe2f22f3f35efd1673376dc47f3a1a1b8aa2b4e3" />
       </head>
       {/* Begin Money tag */}
@@ -87,12 +88,12 @@ export default function RootLayout({
         {/* <HilltopAdBanner1 /> */}
         <AdsterraAdComponent1 />
         <div className="mainLayout">
-          {/* <Link
-            href="https://dubzenom.com/4/7530232"
+          <Link
+            href="https://whomeenoaglauns.com/4/7530232"
             className="text-xl font-bold text-white"
           >
-            Suprise!!! (2.0)
-          </Link> */}
+            Click Me!!!
+          </Link>
         </div>
         <div className="">{children}</div>
         <div className="mainComponent">
