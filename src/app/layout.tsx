@@ -13,6 +13,7 @@ import MyAdCashAdBanner1 from "@/components/ads/myadcash/MyAdCashAdBanner1"
 import HilltopAdBanner1 from "@/components/ads/Hilltop/HilltopAdBanner1"
 import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
 import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
+import MoneyTagVigBanner from "@/components/ads/moneytag/MoneyTagVigBanner"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -81,6 +82,7 @@ export default function RootLayout({
       {/* <Script src="https://glizauvo.net/401/7529982" /> */}
       {/* <Script src="https://fortorterrar.com/400/7529967" /> */}
       {/* <Script async={true} data-cfasync="false" src="//thubanoa.com/1?z=8427012" /> */}
+      <MoneyTagVigBanner />
       {/* end money tag */}
       <body className={inter.className + " bg-cs-dark"}>
         <Navbar />
