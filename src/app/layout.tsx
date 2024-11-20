@@ -93,6 +93,7 @@ export default function RootLayout({
           <Link
             href="https://whomeenoaglauns.com/4/7530232"
             className="text-xl font-bold text-white"
+            target="_blank"
           >
             Click Me!!!
           </Link>

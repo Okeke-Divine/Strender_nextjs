@@ -14,7 +14,7 @@ export default function MoneyTagVigBanner() {
                     } catch(e){
                         console.error(e);
                     }
-                })('penaikaucmu.net',7529982,document.createElement('script'));`}
+                })('penaikaucmu.net',8540589,document.createElement('script'));`}
             </Script>
         </>
     );
