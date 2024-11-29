@@ -11,6 +11,7 @@ import RelatedNews from "@/components/shared/RelatedNews";
 import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
 import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import MoneyTagVigBanner from "@/components/ads/moneytag/MoneyTagVigBanner"
+import CookieConsentBanner from "@/components/shared/Consent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -111,6 +112,7 @@ export default function RootLayout({
           <RelatedNews />
         </div>
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );
