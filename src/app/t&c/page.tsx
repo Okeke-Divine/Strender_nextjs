@@ -6,7 +6,14 @@ export const metadata = {
 };
 
 export default function TermsAndConditions() {
-  incrementTotalViews();
+  // incrementTotalViews();
+
+  return (
+    <>
+    404
+    </>
+  )
+
   return (
     <>
       <main className="mainComponent">

@@ -62,14 +62,14 @@ export default function Footer() {
             {/* footer link container */}
             <div className="mt-1 md:mt-0 w-full md:w-1/3 p-2">
               <div className="font-bold text-xl text-white">Legal</div>
-              <div className="mt-2">
+              {/* <div className="mt-2">
                 <Link
                   href="/t&c"
                   className="text-gray-400 duration-300 hover:text-white site_postLinks"
                 >
                   Terms & Conditions
                 </Link>
-              </div>
+              </div> */}
               <div>
                 <Link
                   href="/privacy-policy"
