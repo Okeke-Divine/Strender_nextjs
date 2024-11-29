@@ -8,9 +8,6 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import LatestNews from "@/components/shared/LatestNews";
 import RelatedNews from "@/components/shared/RelatedNews";
-import MyAdCashAdScript from "@/components/ads/myadcash/MyAdCashAdScript"
-import MyAdCashAdBanner1 from "@/components/ads/myadcash/MyAdCashAdBanner1"
-import HilltopAdBanner1 from "@/components/ads/Hilltop/HilltopAdBanner1"
 import AdsterraAdSense from "@/components/ads/adsterra/Scripts";
 import AdsterraAdComponent1 from "@/components/ads/adsterra/AdsterraAdComponent1";
 import MoneyTagVigBanner from "@/components/ads/moneytag/MoneyTagVigBanner"
@@ -37,6 +34,14 @@ export default function RootLayout({
         {/* <MyAdCashAdScript /> */}
         <GoogleAnalytics />
         <AdsterraAdSense />
+
+        {/* BEGINE:google ads */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2431766066357656"
+          crossOrigin="anonymous"
+        />
+        {/* END:google ads */}
         <meta charSet="UTF-8" />
         <meta name="monetag" content="440c1d2982786d7eaa2771d8286f3113" />
         <meta name="robots" content="index, follow" />
