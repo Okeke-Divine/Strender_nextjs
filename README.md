@@ -24,11 +24,6 @@ The platform is designed to deliver **real-time updates**, allow for **community
 
 ---
 
-## 🖼️ Screenshots
-> (Add screenshots of your homepage, categories, and a post page with comments here)
-
----
-
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js, TypeScript, TailwindCSS  
 - **Backend:** Prisma ORM, MySQL  
