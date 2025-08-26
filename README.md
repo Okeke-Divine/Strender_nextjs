@@ -3,7 +3,7 @@
 > **An Automated Content Engine for Real-Time News & Sports Blogging.**
 
 ## 🚀 Live Demo
-👉 **[Experience Strender Live](https://strender.okekedivine.com.ng)** *(Ensure the custom subdomain is configured)*
+👉 **[Experience Strender Live](https://strender.okekedivine.com.ng)**
 
 ## 📖 Overview
 **Strender** is a full-stack, automated publishing platform that aggregates, curates, and delivers real-time news and sports content. It combines a performant **Next.js 14** frontend with a robust **Prisma/MySQL** backend to create a seamless, CMS-like experience with community engagement features, all without requiring manual content updates.
