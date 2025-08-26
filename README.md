@@ -1,67 +1,72 @@
-# Strender 📰⚽
+# Strender · [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat&logo=next.js)](https://nextjs.org) [![Prisma](https://img.shields.io/badge/Prisma-5.0-2D3748?style=flat&logo=prisma)](https://prisma.io) [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql)](https://mysql.com)
 
-**An Automated Sports & News Blogging Platform** built with **Next.js**, **Prisma**, and **MySQL**.  
+> **An Automated Content Engine for Real-Time News & Sports Blogging.**
 
-[Live Demo → strender.vercel.app](https://strender.vercel.app)
-
----
+## 🚀 Live Demo
+👉 **[Experience Strender Live](https://strender.okekedivine.com.ng)** *(Ensure the custom subdomain is configured)*
 
 ## 📖 Overview
-Strender is a **modern news and sports blog platform** that automatically curates and publishes articles across multiple categories such as **sports, war, politics, and more**.  
+**Strender** is a full-stack, automated publishing platform that aggregates, curates, and delivers real-time news and sports content. It combines a performant **Next.js 14** frontend with a robust **Prisma/MySQL** backend to create a seamless, CMS-like experience with community engagement features, all without requiring manual content updates.
 
-The platform is designed to deliver **real-time updates**, allow for **community interaction via anonymous comments**, and provide a seamless reading experience.
+## 🛠️ Tech Stack & Architecture
+- **Framework:** Next.js 14 (App Router, Server Components, API Routes)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Database:** MySQL with Prisma ORM
+- **Deployment:** Vercel
+- **Authentication:** N/A (Anonymous commenting system)
 
----
-
-## ✨ Features
-- 📰 **Automated Content Publishing** – Streamlined system for delivering fresh news  
-- 📂 **Multi-Category Blog** – Sports, news, war, politics, and more  
-- 💬 **Anonymous Comments** – Engage with posts without needing an account  
-- 🔍 **SEO Optimized** – Pages optimized for search engine indexing  
-- 📱 **Responsive UI** – Clean and minimal design across desktop and mobile  
-- ⚡ **Next.js 14 + App Router** – Server-side rendering for performance and SEO  
-- 🛠️ **CMS-like Functionality** – Manage posts with Prisma + MySQL backend  
-
----
-
-## 🛠️ Tech Stack
-- **Frontend:** Next.js, TypeScript, TailwindCSS  
-- **Backend:** Prisma ORM, MySQL  
-- **Deployment:** Vercel  
-- **Other:** ESLint, PostCSS  
-
----
+## 📈 Core Features
+- **🤖 Automated Publishing:** The core engine for content aggregation and posting.
+- **📂 Dynamic Categories:** Sports, News, Politics, War, easily extensible for new topics.
+- **💬 Anonymous Commenting:** Frictionless user engagement without auth barriers.
+- **🔍 SEO Engine:** Automatically generated meta tags, open graph data, and semantic HTML.
+- **🎨 Responsive Design:** Flawless experience on all device sizes.
 
 ## 🚀 Getting Started
 
-### Clone Repository
-```bash
-git clone https://github.com/Okeke-Divine/Strender_nextjs.git
-cd Strender_nextjs
-```
+### Prerequisites
+- Node.js 18+
+- MySQL database
 
-### Install Dependencies
-```bash
-npm install
-```
+### Installation & Local Development
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Okeke-Divine/Strender_nextjs.git
+    cd Strender_nextjs
+    ```
 
-### Setup Environment
-Set up environment variables:
-```env
-cp .env.example .env.local
-```
-Update `.env.local` with your MySQL credentials.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-### Run Development Server
-```bash
-npm run dev
-```
-Now visit **http://localhost:3000**
+3.  **Set up environment variables:**
+    ```bash
+    cp .env.example .env.local
+    ```
+    Edit `.env.local` with your configuration
 
+4.  **Initialize the database:**
+    ```bash
+    npx prisma generate
+    npx prisma db push
+    ```
+    
+5.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## 📄 License
-This project is licensed under the MIT License.
+## 🧠 Knowledge Demonstrated
+- **Next.js 14 App Router:** Advanced routing, data fetching (SSR, SSG), and Server Components.
+- **Full-Stack Development:** Integrated frontend and backend logic within a single framework.
+- **Database Design:** Modeling relational data with Prisma and MySQL.
+- **TypeScript:** Implementing end-to-end type safety.
+- **User Experience:** Designing intuitive, frictionless interactions (anonymous comments).
+- **Deployment & DevOps:** Configuring and deploying a complex application on Vercel.
 
 ---
 
-👨‍💻 Built with ❤️ by [Okeke Divine](https://github.com/Okeke-Divine)
+**Built by [Divine-Vessel](https://github.com/Okeke-Divine)**
